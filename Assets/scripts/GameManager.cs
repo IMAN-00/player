@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     {
         Player red = new Player(1);
         Player yellow = new Player(2);
-        InitializePlayer()new player(1);
+    //   InitializePlayer()new player(1);
     }
 
 
