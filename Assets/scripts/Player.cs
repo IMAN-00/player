@@ -6,25 +6,15 @@ public class Player
 {
 
     public string name;
-    public int health = 100;
+    public int health;
     static public int PlayerCount = 0;
- 
-    public string InitializePlayer()
-      {
-         return name;
-      }
-    public int InitialHealth()
-      {
-         return health;
-      }
-    public void PlayerName(string PlayerName, int health)
+
+    public void InitializePlayer(string PlayerName, int PlayerHealth)
       {
          name = PlayerName;
-         health = 100;
+         health = PlayerHealth;
          PlayerCount++;
       }
-      
-     
     public void Heal(int amount)
       {
          health += amount;

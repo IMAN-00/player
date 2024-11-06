@@ -4,14 +4,19 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    Player red = new Player();
+    Player yellow = new Player();
     void Start()
     {
-        Player red = new Player(1);
-        Player yellow = new Player(2);
-    //   InitializePlayer()new player(1);
+      red.InitializePlayer("red", 40);
+      yellow.InitializePlayer("yellow", 70);
+      Debug.Log(red.name + " " +red.health);
+      Debug.Log(yellow.name + " " +yellow.health);
+      Debug.Log(Player.PlayerCount);
+      red.Heal(60);
+      yellow.Heal(true);
+      
     }
-
-
-        
+    
 
 }
