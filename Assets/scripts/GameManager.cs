@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
       
       red = new Player("red", 40);
       yellow = new Player("yellow", 70);
+      red.InitializePlayer();
+      yellow.InitializePlayer();
       Debug.Log(red.name + " " +red.health);
       Debug.Log(yellow.name + " " +yellow.health);
       Debug.Log(Player.PlayerCount);
