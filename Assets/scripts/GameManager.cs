@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    Player red = new Player();
-    Player yellow = new Player();
+    Player red;
+    Player yellow;
     void Start()
     {
-      red.InitializePlayer("red", 40);
-      yellow.InitializePlayer("yellow", 70);
+      
+      red = new Player("red", 40);
+      yellow = new Player("yellow", 70);
       Debug.Log(red.name + " " +red.health);
       Debug.Log(yellow.name + " " +yellow.health);
       Debug.Log(Player.PlayerCount);
